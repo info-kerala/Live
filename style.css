@@ -10,7 +10,9 @@ body{
   min-width: 320px;
 }
 
-
+a {
+  text-decoration: none;
+}
 
 .main-container {
 
@@ -180,7 +182,7 @@ body{
 @media screen and (min-width: 1024px) {
   .column {
     float: left;
-    width: 33.33%;
+    width: 50%;
     padding: 4px;
   }
 
