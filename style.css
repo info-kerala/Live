@@ -167,7 +167,7 @@ a {
     }
   }
 
-  .comi, .bulb {
+  .comi {
     animation: blinker 2s linear infinite;
   }
   
