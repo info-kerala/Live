@@ -1,379 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live TV</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column  {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column  {
+    width: 100%;
+  }
+}
+</style>
 </head>
 <body>
-    <div class="main-container">
-        <div class="banner">
-            <div class="title">
-                <h1>സ്പോർട്സ് പരസ്യമില്ലാതെ ലൈവ് കാണുവാൻ ടെലിഗ്രാം ചാനൽ സന്ദർശിക്കുക. 👇</h1>
-                <div class="centre">
-                    <a class="button" href="https://t.me/+38SQMiRUyW8zZjdl">Ads Free&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>&nbsp;&nbsp;&nbsp;
-                    <a class="button" href="https://t.me/+38SQMiRUyW8zZjdl" target="_blank">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column col-watarwc">
-                <div class="box-edit box-qatarwc">
-                    <b>World Cup 2022 ♦️</b> <br>
-                    
-                    <h1>Qatar <img class="f-ball" src="alrihla.png" alt="" srcset=""> World Cup&nbsp;<span class="bulb"></span><span class="comi">&nbsp;Coming Soon</span></h1>
 
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:white'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:white'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-1" href="#">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>&nbsp;&nbsp;&nbsp;
-                        <a class="button" href="https://t.me/+38SQMiRUyW8zZjdl" target="_blank">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-        
-            <div class="column">
-                <div class="box-edit box-2">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasters <span class="vs">VS</span> Fc Goa</h1>
+<h2>Mixed Column Layout</h2>
+<p>Resize the browser window to see the responsive effect (the columns will re-arrange its layout from four to two on screens that are less than 900px wide. <b>However</b>, on screens that are less than 600px wide, the columns will stack on top of each other instead of floating next to each other.)</p>
 
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-2" href="//stream.crichd.vip/update/skys5.php">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+  <h2>Column 1</h2>
+  <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+  <h2>Column 2</h2>
+  <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+  <h2>Column 3</h2>
+  <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+  <h2>Column 4</h2>
+  <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#aaa;">
+  <h2>Column 1</h2>
+  <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+  <h2>Column 2</h2>
+  <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+  <h2>Column 3</h2>
+  <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+  <h2>Column 4</h2>
+  <p>Some text..</p>
+  </div>
+</div>
 
-            <div class="column">
-                <div class="box-edit box-3">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasters <span class="vs">VS</span> Fc Goa</h1>
-
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-3" href="https://mhdtvworld.xyz/live/aplus">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="box-edit box-4">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasddsdss dsdsdsters <span class="vs">VS</span> Fc Goa</h1>
-
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-4" href="screen.html">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="box-edit box-5">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasddsdssd sdsdsters <span class="vs">VS</span> Fc Goa</h1>
-
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-6" href="screen.html">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="box-edit box-1">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasters <span class="vs">VS</span> Fc Goa</h1>
-
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-7" href="screen.html">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-        
-            <div class="column">
-                <div class="box-edit box-2">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasters <span class="vs">VS</span> Fc Goa</h1>
-
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-8" href="screen.html">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="box-edit box-3">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasters <span class="vs">VS</span> Fc Goa</h1>
-
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-9" href="screen.html">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="box-edit box-4">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasddsdss dsdsdsters <span class="vs">VS</span> Fc Goa</h1>
-
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-10" href="screen.html">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="box-edit box-5">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasddsdssd sdsdsters <span class="vs">VS</span> Fc Goa</h1>
-
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-11" href="screen.html">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="box-edit box-1">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasters <span class="vs">VS</span> Fc Goa</h1>
-
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-12" href="screen.html">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-        
-            <div class="column">
-                <div class="box-edit box-2">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasters <span class="vs">VS</span> Fc Goa</h1>
-
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-13" href="screen.html">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="box-edit box-3">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasters <span class="vs">VS</span> Fc Goa</h1>
-
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-14" href="screen.html">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="box-edit box-4">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasddsdss dsdsdsters <span class="vs">VS</span> Fc Goa</h1>
-
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-15" href="screen.html">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="box-edit box-5">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasddsdssd sdsdsters <span class="vs">VS</span> Fc Goa</h1>
-
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-16" href="screen.html">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="box-edit box-1">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasters <span class="vs">VS</span> Fc Goa</h1>
-
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-17" href="screen.html">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-        
-            <div class="column">
-                <div class="box-edit box-2">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasters <span class="vs">VS</span> Fc Goa</h1>
-
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-18" href="screen.html">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="box-edit box-3">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasters <span class="vs">VS</span> Fc Goa</h1>
-
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-19" href="screen.html">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="box-edit box-4">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasddsdss dsdsdsters <span class="vs">VS</span> Fc Goa</h1>
-
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-20" href="screen.html">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="box-edit box-5">
-                    <b>Indian Super League ♦️</b> <br>
-                    <h1>Kerala Blasddsdssd sdsdsters <span class="vs">VS</span> Fc Goa</h1>
-
-                    <p class="texts">
-                        <i class='far fa-calendar-alt' style='font-size:20px;color:black'></i>&nbsp;&nbsp;7.30 PM IST <br><br>
-                        <i class='far fa-futbol' style='font-size:20px;color:black'></i>&nbsp;&nbsp;Jawaharlal Nehru Stadium <br>
-                        <i class="fa fa-play-circle-o" style="font-size:20px;color:red; line-height: 1.6;"></i>&nbsp;&nbsp;Watch Live<br>
-                    </p>
-                    <div class="live-btn">
-                        <a class="button play-21" href="screen.html">Live&nbsp;&nbsp;&nbsp;<span class="bulb"></span> </a>
-                        <a class="button" href="screen.html">TG Channel&nbsp;&nbsp;&nbsp;<i class="fa fa-telegram" style="font-size:20px;color:#2AABEE"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>   
-    </div>
-
-
-
-
-
-      
-      <script src="script.js"></script>
 </body>
 </html>
