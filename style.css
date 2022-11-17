@@ -574,7 +574,9 @@ background: linear-gradient(90deg, rgba(74,7,25,1) 0%, rgba(127,20,49,1) 51%, rg
 }
 
 
-
+.play-22 {
+  background-color: black;
+}
 
 @media (max-width: 1000px) {
   .gallery .image{
