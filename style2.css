@@ -18,12 +18,19 @@ body {
     position: relative;
     top: -82px;
     width: 768px;
-    height: 450px;
+    height: 690px;
 }
+.fframe2 {
+    position: relative;
+    top: -82px;
+    width: 768px;
+    height: 500px;
+}
+
 
 .back-btn {
     padding: 5px 14px;
-    background-color: rgb(255, 255, 255);
+    background-color: #bcc9dc;
     border-radius: 5px;
     margin: 5px;
 }
@@ -36,11 +43,11 @@ body {
     .footer-box {
         font-size: 20px;
         margin: auto;
-}
+    }
     .footer {
         display: flex;
         justify-content: center;
-        background-color: #bcc9dc;
+        background-color: white;
         position: relative;
         margin-top: -140px;
         height: 80px;
@@ -52,9 +59,31 @@ body {
         text-decoration: none;
     }
 
+    .footer-box2 {
+        font-size: 20px;
+        margin: auto;
+    }
+    .footer2 {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        position: relative;
+        margin-top: -280px;
+        height: 200px;
+    }
+    .footer-box2 a {
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
   }
 @media (min-width: 441px) {
     .footer {
+        display: none;
+    }
+    .footer2 {
         display: none;
     }
 
