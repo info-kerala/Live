@@ -18,7 +18,7 @@ body{
     -ms-user-select: none;
     user-select: none;
     background: rgb(216, 216, 216);
-    min-width: 449px;
+    min-width: 380px;
 }
 body:focus {
   outline: none !important;
@@ -402,7 +402,7 @@ background: linear-gradient(90deg, rgba(74,7,25,1) 0%, rgba(127,20,49,1) 51%, rg
   display: flex;
   margin: auto;
   width: 50%;
-  min-width: 130px;
+  min-width: 120px;
   height: 40px;
   border-radius: 10px;
   margin-right: 5px;
@@ -413,7 +413,7 @@ background: linear-gradient(90deg, rgba(74,7,25,1) 0%, rgba(127,20,49,1) 51%, rg
   display: flex;
   margin: auto;
   width: 50%;
-  min-width: 130px;
+  min-width: 120px;
   height: 40px;
   border-radius: 10px;
   margin-left: 5px;
@@ -757,6 +757,7 @@ background: linear-gradient(90deg, rgba(74,7,25,1) 0%, rgba(127,20,49,1) 51%, rg
   justify-content: right;
   width: 100%;
   padding-right: 14px;
+  padding-top: 2px;
   height: 20%;
 }
 
@@ -764,5 +765,18 @@ background: linear-gradient(90deg, rgba(74,7,25,1) 0%, rgba(127,20,49,1) 51%, rg
   padding: 2px;
   height: 100%;
 }
+
+.status-h1 {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  margin: auto;
+}
+
+.team-h1 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
 
 }
