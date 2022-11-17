@@ -54,4 +54,4 @@ window.onload = ()=>{ //after window loaded
 //selecting all required elements
 
 
-//document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => event.preventDefault());
