@@ -54,36 +54,6 @@ window.onload = ()=>{ //after window loaded
 //selecting all required elements
 
 
-
-var imageLibrary = [
-  {'dt': '20221121', 'src': 'team-logo/Senegal_vs_Netherlands.jpg' }, 
-  {'dt': '20221122', 'src': '' },
-  {'dt': '20221123', 'src': '' }, 
-  {'dt': '20221124', 'src': '' },
-  {'dt': '20221125', 'src': '' }, 
-  {'dt': '20221126', 'src': '' },
-  {'dt': '20221127', 'src': '' }, 
-  {'dt': '20221128', 'src': '' },
-  {'dt': '20221129', 'src': '' }, 
-  {'dt': '20221130', 'src': '' },
-  {'dt': '20221201', 'src': '' },
-  {'dt': '20221202', 'src': '' },
-  {'dt': '20221203', 'src': '' },
-  {'dt': '20221204', 'src': '' },
-  {'dt': '20221205', 'src': '' },
-  {'dt': '20221206', 'src': '' }
-], 
-showImage, img, today = new Date(), search, 
-d = today.getDate().toString(), 
-m = (today.getMonth() + 1).toString(), 
-y = today.getFullYear().toString()
-;
-search = y + (m[1] ? m : "0" + m[0]) + (d[1] ? d : "0" + d[0]);
-showImage = imageLibrary.filter(function(obj) { return (obj.dt === search); });
-img = document.createElement('img');
-img.src = showImage[0].src;
-document.getElementById('slidy').appendChild(img);
-
 var imageLibrary = [
   {'dt': '20221121', 'src': 'team-logo/Senegal_vs_Netherlands.jpg' }, 
   {'dt': '20221122', 'src': 'https://jiocinemaweb.cdn.jio.com/jioimages.cdn.jio.com/content/entry/dynamiccontent/thumbs/1920/-/0/65/63/da665da0675b11eda82fc3fdb6af0de0_1668860968058_l_medium.jpg' }, 
@@ -115,7 +85,7 @@ document.getElementById('slidy').appendChild(img);
 
 var imageLibrary = [
   {'dt': '20221121', 'src': 'team-logo/Senegal_vs_Netherlands.jpg' }, 
-  {'dt': '20221122', 'src': '' }, 
+  {'dt': '20221122', 'src': 'https://i.ytimg.com/vi/ZA6NzD5V7KE/maxresdefault.jpg' }, 
   {'dt': '20221123', 'src': '' }, 
   {'dt': '20221124', 'src': '' },
   {'dt': '20221125', 'src': '' }, 
@@ -144,7 +114,7 @@ document.getElementById('slidy').appendChild(img);
 
 var imageLibrary = [
   {'dt': '20221121', 'src': 'team-logo/Senegal_vs_Netherlands.jpg' }, 
-  {'dt': '20221122', 'src': '' }, 
+  {'dt': '20221122', 'src': 'https://jiocinemaweb.cdn.jio.com/jioimages.cdn.jio.com/content/entry/dynamiccontent/thumbs/1920/-/0/65/63/da665da0675b11eda82fc3fdb6af0de0_1668860968058_l_medium.jpg' }, 
   {'dt': '20221123', 'src': '' }, 
   {'dt': '20221124', 'src': '' },
   {'dt': '20221125', 'src': '' }, 
