@@ -54,4 +54,186 @@ window.onload = ()=>{ //after window loaded
 //selecting all required elements
 
 
+
+var imageLibrary = [
+  {'dt': '20221121', 'src': 'team-logo/Senegal_vs_Netherlands.jpg' }, 
+  {'dt': '20221122', 'src': '' },
+  {'dt': '20221123', 'src': '' }, 
+  {'dt': '20221124', 'src': '' },
+  {'dt': '20221125', 'src': '' }, 
+  {'dt': '20221126', 'src': '' },
+  {'dt': '20221127', 'src': '' }, 
+  {'dt': '20221128', 'src': '' },
+  {'dt': '20221129', 'src': '' }, 
+  {'dt': '20221130', 'src': '' },
+  {'dt': '20221201', 'src': '' },
+  {'dt': '20221202', 'src': '' },
+  {'dt': '20221203', 'src': '' },
+  {'dt': '20221204', 'src': '' },
+  {'dt': '20221205', 'src': '' },
+  {'dt': '20221206', 'src': '' }
+], 
+showImage, img, today = new Date(), search, 
+d = today.getDate().toString(), 
+m = (today.getMonth() + 1).toString(), 
+y = today.getFullYear().toString()
+;
+search = y + (m[1] ? m : "0" + m[0]) + (d[1] ? d : "0" + d[0]);
+showImage = imageLibrary.filter(function(obj) { return (obj.dt === search); });
+img = document.createElement('img');
+img.src = showImage[0].src;
+document.getElementById('slidy').appendChild(img);
+
+var imageLibrary = [
+  {'dt': '20221121', 'src': 'team-logo/Senegal_vs_Netherlands.jpg' }, 
+  {'dt': '20221122', 'src': 'https://jiocinemaweb.cdn.jio.com/jioimages.cdn.jio.com/content/entry/dynamiccontent/thumbs/1920/-/0/65/63/da665da0675b11eda82fc3fdb6af0de0_1668860968058_l_medium.jpg' }, 
+  {'dt': '20221123', 'src': '' }, 
+  {'dt': '20221124', 'src': '' },
+  {'dt': '20221125', 'src': '' }, 
+  {'dt': '20221126', 'src': '' },
+  {'dt': '20221127', 'src': '' }, 
+  {'dt': '20221128', 'src': '' },
+  {'dt': '20221129', 'src': '' }, 
+  {'dt': '20221130', 'src': '' },
+  {'dt': '20221201', 'src': '' },
+  {'dt': '20221202', 'src': '' },
+  {'dt': '20221203', 'src': '' },
+  {'dt': '20221204', 'src': '' },
+  {'dt': '20221205', 'src': '' },
+  {'dt': '20221206', 'src': '' }
+], 
+showImage, img, today = new Date(), search, 
+d = today.getDate().toString(), 
+m = (today.getMonth() + 1).toString(), 
+y = today.getFullYear().toString()
+;
+search = y + (m[1] ? m : "0" + m[0]) + (d[1] ? d : "0" + d[0]);
+showImage = imageLibrary.filter(function(obj) { return (obj.dt === search); });
+img = document.createElement('img');
+img.src = showImage[0].src;
+document.getElementById('slidy').appendChild(img);
+
+var imageLibrary = [
+  {'dt': '20221121', 'src': 'team-logo/Senegal_vs_Netherlands.jpg' }, 
+  {'dt': '20221122', 'src': '' }, 
+  {'dt': '20221123', 'src': '' }, 
+  {'dt': '20221124', 'src': '' },
+  {'dt': '20221125', 'src': '' }, 
+  {'dt': '20221126', 'src': '' },
+  {'dt': '20221127', 'src': '' }, 
+  {'dt': '20221128', 'src': '' },
+  {'dt': '20221129', 'src': '' }, 
+  {'dt': '20221130', 'src': '' },
+  {'dt': '20221201', 'src': '' },
+  {'dt': '20221202', 'src': '' },
+  {'dt': '20221203', 'src': '' },
+  {'dt': '20221204', 'src': '' },
+  {'dt': '20221205', 'src': '' },
+  {'dt': '20221206', 'src': '' }
+], 
+showImage, img, today = new Date(), search, 
+d = today.getDate().toString(), 
+m = (today.getMonth() + 1).toString(), 
+y = today.getFullYear().toString()
+;
+search = y + (m[1] ? m : "0" + m[0]) + (d[1] ? d : "0" + d[0]);
+showImage = imageLibrary.filter(function(obj) { return (obj.dt === search); });
+img = document.createElement('img');
+img.src = showImage[0].src;
+document.getElementById('slidy').appendChild(img);
+
+var imageLibrary = [
+  {'dt': '20221121', 'src': 'team-logo/Senegal_vs_Netherlands.jpg' }, 
+  {'dt': '20221122', 'src': '' }, 
+  {'dt': '20221123', 'src': '' }, 
+  {'dt': '20221124', 'src': '' },
+  {'dt': '20221125', 'src': '' }, 
+  {'dt': '20221126', 'src': '' },
+  {'dt': '20221127', 'src': '' }, 
+  {'dt': '20221128', 'src': '' },
+  {'dt': '20221129', 'src': '' }, 
+  {'dt': '20221130', 'src': '' },
+  {'dt': '20221201', 'src': '' },
+  {'dt': '20221202', 'src': '' },
+  {'dt': '20221203', 'src': '' },
+  {'dt': '20221204', 'src': '' },
+  {'dt': '20221205', 'src': '' },
+  {'dt': '20221206', 'src': '' }
+], 
+showImage, img, today = new Date(), search, 
+d = today.getDate().toString(), 
+m = (today.getMonth() + 1).toString(), 
+y = today.getFullYear().toString()
+;
+search = y + (m[1] ? m : "0" + m[0]) + (d[1] ? d : "0" + d[0]);
+showImage = imageLibrary.filter(function(obj) { return (obj.dt === search); });
+img = document.createElement('img');
+img.src = showImage[0].src;
+document.getElementById('slidy').appendChild(img);
+
+
+
 document.addEventListener('contextmenu', event => event.preventDefault());
+
+
+
+
+
+    /* user defined variables */
+    var timeOnSlide = 3, 		
+    // the time each image will remain static on the screen, measured in seconds
+    timeBetweenSlides = 1, 	
+    // the time taken to transition between images, measured in seconds
+    
+    // test if the browser supports animation, and if it needs a vendor prefix to do so
+    animationstring = 'animation',
+    animation = false,
+    keyframeprefix = '',
+    domPrefixes = 'Webkit Moz O Khtml'.split(' '), 
+    // array of possible vendor prefixes
+    pfx  = '',
+    slidy = document.getElementById("slidy"); 
+    if (slidy.style.animationName !== undefined) { animation = true; } 
+    // browser supports keyframe animation w/o prefixes
+    
+    if( animation === false ) {
+    for( var i = 0; i < domPrefixes.length; i++ ) {
+    if( slidy.style[ domPrefixes[i] + 'AnimationName' ] !== undefined ) {
+      pfx = domPrefixes[ i ];
+      animationstring = pfx + 'Animation';
+      keyframeprefix = '-' + pfx.toLowerCase() + '-';
+      animation = true;
+      break;
+    }
+    }
+    }
+    
+    if( animation === false ) {
+    // animate in JavaScript fallback
+    } else {
+    var images = slidy.getElementsByTagName("img"),
+      firstImg = images[0], 
+      // get the first image inside the "slidy" element.
+      imgWrap = firstImg.cloneNode(false);  // copy it.
+    slidy.appendChild(imgWrap); // add the clone to the end of the images
+    var imgCount = images.length, // count the number of images in the slide, including the new cloned element
+      totalTime = (timeOnSlide + timeBetweenSlides) * (imgCount - 1), // calculate the total length of the animation by multiplying the number of _actual_ images by the amount of time for both static display of each image and motion between them
+      slideRatio = (timeOnSlide / totalTime)*100, // determine the percentage of time an induvidual image is held static during the animation
+      moveRatio = (timeBetweenSlides / totalTime)*100, // determine the percentage of time for an individual movement
+      basePercentage = 100/imgCount, // work out how wide each image should be in the slidy, as a percentage.
+      position = 0, // set the initial position of the slidy element
+      css = document.createElement("style"); // start marking a new style sheet
+    css.type = "text/css";
+    css.innerHTML += "#slidy { text-align: left; margin: 0; font-size: 0; position: relative; width: " + (imgCount * 100) + "%;  }\n"; // set the width for the slidy container
+    css.innerHTML += "#slidy img { float: left; width: " + basePercentage + "%; }\n";
+    css.innerHTML += "@"+keyframeprefix+"keyframes slidy {\n"; 
+    for (i=0;i<(imgCount-1); i++) { // 
+    position+= slideRatio; // make the keyframe the position of the image
+    css.innerHTML += position+"% { left: -"+(i * 100)+"%; }\n";
+    position += moveRatio; // make the postion for the _next_ slide
+    css.innerHTML += position+"% { left: -"+((i+1) * 100)+"%; }\n";
+    }
+    css.innerHTML += "}\n";
+    css.innerHTML += "#slidy { left: 0%; "+keyframeprefix+"transform: translate3d(0,0,0); "+keyframeprefix+"animation: "+totalTime+"s slidy infinite; }\n"; // call on the completed keyframe animation sequence
+    document.body.appendChild(css); // add the new stylesheet to the end of the document
+    }
