@@ -85,7 +85,7 @@ document.getElementById('slidy').appendChild(img);
 
 var imageLibrary = [
   {'dt': '20221121', 'src': 'team-logo/Senegal_vs_Netherlands.jpg' }, 
-  {'dt': '20221122', 'src': 'https://i.ytimg.com/vi/ZA6NzD5V7KE/maxresdefault.jpg' }, 
+  {'dt': '20221122', 'src': 'team-logo/argentina_vs_saudi_arabia.jpg' }, 
   {'dt': '20221123', 'src': '' }, 
   {'dt': '20221124', 'src': '' },
   {'dt': '20221125', 'src': '' }, 
@@ -114,7 +114,7 @@ document.getElementById('slidy').appendChild(img);
 
 var imageLibrary = [
   {'dt': '20221121', 'src': 'team-logo/Senegal_vs_Netherlands.jpg' }, 
-  {'dt': '20221122', 'src': 'argentina_vs_saudi_arabia.jpg' }, 
+  {'dt': '20221122', 'src': 'https://jiocinemaweb.cdn.jio.com/jioimages.cdn.jio.com/content/entry/dynamiccontent/thumbs/1920/-/0/91/78/9211d1e0698d11ed92d557190da430d2_1669057063547_l_medium.jpg' }, 
   {'dt': '20221123', 'src': '' }, 
   {'dt': '20221124', 'src': '' },
   {'dt': '20221125', 'src': '' }, 
